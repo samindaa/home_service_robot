@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <node pkg="wall_follower" type="wall_follower" name="wall_follower" output="screen">
+    <remap from="robotactuate" to="cmd_vel_mux/input/teleop"/>
+    <remap from="laserscan" to="scan"/>
+  </node>
+  
+</launch>
